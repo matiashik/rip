@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: alt
+  datasource:
+    url: 'jdbc:sqlite:./alt.db'
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  hibernate:
+    dialect: org.hibernate.dialect.SQLiteDialect
