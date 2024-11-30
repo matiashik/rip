@@ -23,22 +23,22 @@ class UsersController {
 
     @GetMapping("/{id}")
     public User show(@PathVariable Long id) {
-        return service.readUser(id);
+        return service.find(id);
     }
 
     @PostMapping("")
     public User create(@RequestBody User user) {
-        return service.creatUser(user);
+        return service.create(user);
     }
 
     @PutMapping("/{id}")
     public User update(@PathVariable Long id, @RequestBody User user) {
-        return service.updateUser(id, user);
+        return service.update(id, user);
     }
 
     @DeleteMapping("/{id}")
     public User delete(@PathVariable Long id) {
-        return service.deleteUser(id);
+        return service.delete(id);
     }
 
 
