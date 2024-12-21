@@ -1,6 +1,6 @@
 databaseChangeLog:
   - changeSet:
-      id: "create database"
+      id: "create users"
       author: "Big Chungus"
       changes:
         - createTable:

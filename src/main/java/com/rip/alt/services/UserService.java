@@ -2,9 +2,12 @@ package com.rip.alt.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import com.rip.alt.models.User;
 import com.rip.alt.models.UserRepository;
+import com.rip.alt.validators.UserValidator;
 
+import jakarta.validation.ValidationException;
 import lombok.RequiredArgsConstructor;
 
 @Service
@@ -14,7 +17,12 @@ public class UserService {
     @Autowired
     public final UserRepository repository;
 
+    @Autowired
+    public final UserValidator validator;
+
     public User create(User user) {
+        validator.validateObject(user).failOnError(ValidationException::new);
+
         return repository.save(user);
     }
 
@@ -24,10 +32,13 @@ public class UserService {
 
     public User update(Long id, User user) {
         return repository.findById(id).map(u -> {
+            user.setId(id);
+            validator.validateObject(user).failOnError(ValidationException::new);
             u.setLogin(user.getLogin());
             u.setPassword(user.getPassword());
             return repository.save(u);
         }).orElseGet(() -> {
+            validator.validateObject(user).failOnError(ValidationException::new);
             return repository.save(user);
         });
     }

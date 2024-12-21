@@ -2,7 +2,7 @@ spring:
   application:
     name: alt
   datasource:
-    url: 'jdbc:sqlite:./alt.db'
+    url: "jdbc:sqlite:./alt.db"
   jpa:
     show-sql: true
     hibernate:
