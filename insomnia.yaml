@@ -1,0 +1,592 @@
+_type: export
+__export_format: 4
+__export_date: 2024-12-23T18:49:06.778Z
+__export_source: insomnia.desktop.app:v10.2.0
+resources:
+  - _id: req_321316c81cdf4c5186204db81f2578d7
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734979617620
+    created: 1732798660660
+    url: "{{ _.base_url }}/users"
+    name: users
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"login": "superLog",
+        	"password": "superPass"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.2.0
+    authentication: {}
+    metaSortKey: -1732798660660
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    parentId: null
+    modified: 1732797858925
+    created: 1732797858925
+    name: alt-rip
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_81d5449e20824348a02968b27f09c598
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734800880873
+    created: 1732798655052
+    url: "{{ _.base_url }}/users/1"
+    name: users
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+    authentication:
+      type: apikey
+      disabled: false
+      key: Authentication
+      value: "{{ _.auth }}"
+      addTo: header
+    metaSortKey: -1732798655052
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e06c1987389943719d79761b8b9aee2c
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734979651127
+    created: 1732802767958
+    url: "{{ _.base_url }}/users/1"
+    name: users
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"login": "superLog",
+        	"password": "superPass"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.2.0
+    authentication:
+      type: apikey
+      disabled: false
+      key: Authentication
+      value: "{{ _.auth }}"
+      addTo: header
+    metaSortKey: -1732798655002
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1bb08fc8d4e54a29a9f1bed355f9ab4e
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734800700807
+    created: 1732803739710
+    url: "{{ _.base_url }}/users/1"
+    name: users
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/10.2.0
+    authentication:
+      type: apikey
+      disabled: false
+      key: Authentication
+      value: "{{ _.auth }}"
+      addTo: header
+    metaSortKey: -1732798654952
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2bca8fd212a04a07834873acb7d9ae5d
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734979655289
+    created: 1734792202407
+    url: "{{ _.base_url }}/users/1/sessions"
+    name: sessions
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"login": "superLog",
+        	"password": "superPass"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.2.0
+    authentication:
+      type: none
+    metaSortKey: -1732798654852
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_49f2b16ac0984515963dad80396d322c
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734894452576
+    created: 1734797968737
+    url: "{{ _.base_url }}/users/1/sessions"
+    name: sessions
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e47a2f11eb8647d99de2716c660a4c1e
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_dfec0e0cf1aa4fd1ba29d0df3138d0bd
+    authentication:
+      type: apikey
+      disabled: false
+      key: Authentication
+      value: "{{ _.auth }}"
+      addTo: header
+    metaSortKey: -1732798654802
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5cad6415e39f460f95140fdf9ac28b62
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734801367593
+    created: 1734801342809
+    url: "{{ _.base_url }}/users/1/sessions/1"
+    name: sessions
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e47a2f11eb8647d99de2716c660a4c1e
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_dfec0e0cf1aa4fd1ba29d0df3138d0bd
+    authentication:
+      type: apikey
+      disabled: false
+      key: Authentication
+      value: "{{ _.auth }}"
+      addTo: header
+    metaSortKey: -1732798654752
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3b2784fcb7b04bfb8a92a3346ab87b3e
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734900948911
+    created: 1734810932462
+    url: "{{ _.base_url }}/expressions"
+    name: expressions
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"latex": "\\frac{1}{2}"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e47a2f11eb8647d99de2716c660a4c1e
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_dfec0e0cf1aa4fd1ba29d0df3138d0bd
+    authentication:
+      type: apikey
+      disabled: false
+      key: Authentication
+      value: "{{ _.auth }}"
+      addTo: header
+    metaSortKey: -1732798654652
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e90a34809ae64cb982bf3196ccd7af54
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734900165099
+    created: 1734896101817
+    url: "{{ _.base_url }}/expressions"
+    name: expressions
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e47a2f11eb8647d99de2716c660a4c1e
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_dfec0e0cf1aa4fd1ba29d0df3138d0bd
+    authentication:
+      type: apikey
+      disabled: false
+      key: Authentication
+      value: "{{ _.auth }}"
+      addTo: header
+    metaSortKey: -1732798654602
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e18211131b494a69b6c39e89e6648aba
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734900150860
+    created: 1734896410162
+    url: "{{ _.base_url }}/expressions/1"
+    name: expressions
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e47a2f11eb8647d99de2716c660a4c1e
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_dfec0e0cf1aa4fd1ba29d0df3138d0bd
+    authentication:
+      type: apikey
+      disabled: false
+      key: Authentication
+      value: "{{ _.auth }}"
+      addTo: header
+    metaSortKey: -1732798654552
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_73f55327910940988b1ce01c6188b828
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734901459451
+    created: 1734897310311
+    url: "{{ _.base_url }}/expressions/1"
+    name: expressions
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"latex": "\\frac{1}{2}"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e47a2f11eb8647d99de2716c660a4c1e
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_dfec0e0cf1aa4fd1ba29d0df3138d0bd
+    authentication:
+      type: apikey
+      disabled: false
+      key: Authentication
+      value: "{{ _.auth }}"
+      addTo: header
+    metaSortKey: -1732798654502
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b30740ba92344a3084d4ba3621298b34
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734897326438
+    created: 1734897322918
+    url: "{{ _.base_url }}/expressions/1"
+    name: expressions
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e47a2f11eb8647d99de2716c660a4c1e
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_dfec0e0cf1aa4fd1ba29d0df3138d0bd
+    authentication:
+      type: apikey
+      disabled: false
+      key: Authentication
+      value: "{{ _.auth }}"
+      addTo: header
+    metaSortKey: -1732798654452
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5e2b588321174362a89c42991b125779
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734902628069
+    created: 1734902616949
+    url: "{{ _.base_url }}/expressions/1/image"
+    name: expressions/image
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e47a2f11eb8647d99de2716c660a4c1e
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_dfec0e0cf1aa4fd1ba29d0df3138d0bd
+    authentication:
+      type: apikey
+      disabled: false
+      key: Authentication
+      value: "{{ _.auth }}"
+      addTo: header
+    metaSortKey: -1732798654352
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_344f3d8897e7432586a1659ad555d61f
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734903182293
+    created: 1734902829948
+    url: "{{ _.base_url }}/expressions/1/image"
+    name: expressions/image
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e47a2f11eb8647d99de2716c660a4c1e
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_dfec0e0cf1aa4fd1ba29d0df3138d0bd
+    authentication:
+      type: none
+    metaSortKey: -1732798654339.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_293b2288b5db45e59a3699ccdcfd7a0f
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734903174055
+    created: 1734902898815
+    url: "{{ _.base_url }}/expressions/1/image/publish"
+    name: expressions/image/publish
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e47a2f11eb8647d99de2716c660a4c1e
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_dfec0e0cf1aa4fd1ba29d0df3138d0bd
+    authentication:
+      type: apikey
+      disabled: false
+      key: Authentication
+      value: "{{ _.auth }}"
+      addTo: header
+    metaSortKey: -1732798654327
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_594dbdcad9934d7cacef86ecda4dd4f3
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734903190223
+    created: 1734903169611
+    url: "{{ _.base_url }}/expressions/1/image/unpublish"
+    name: expressions/image/unpublish
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e47a2f11eb8647d99de2716c660a4c1e
+      - name: User-Agent
+        value: insomnia/10.2.0
+        id: pair_dfec0e0cf1aa4fd1ba29d0df3138d0bd
+    authentication:
+      type: apikey
+      disabled: false
+      key: Authentication
+      value: "{{ _.auth }}"
+      addTo: header
+    metaSortKey: -1732798654314.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_2cda980dfcbec9ae674cf0962ac4852e1deae414
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1734979668665
+    created: 1732797858926
+    name: Base Environment
+    data:
+      base_url: 127.0.0.1:8080/api
+      auth: 1-Av_VzrBRRKIbtoG_ilOXSQEcgJTCkltyomRHr27PoH-TnJlgM8KD_eIRcMoEGBfrs5CTffERAIJrmBIuMAfEINd3HLRbROf8Y7Ug41sQoVZcYpJSLs0o-8eOHKkapYeYBf1v5_m8Tf6s90y2pPy1KwNby__GKmX1OVRGGAmgSQI
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1732797858926
+    environmentType: kv
+    kvPairData:
+      - id: envPair_ac05072c21be42c082f3026d577fad44
+        name: base_url
+        value: 127.0.0.1:8080/api
+        type: str
+        enabled: true
+      - id: envPair_56db4364f0de41818753d77e53b3be2f
+        name: auth
+        value: 1-Av_VzrBRRKIbtoG_ilOXSQEcgJTCkltyomRHr27PoH-TnJlgM8KD_eIRcMoEGBfrs5CTffERAIJrmBIuMAfEINd3HLRbROf8Y7Ug41sQoVZcYpJSLs0o-8eOHKkapYeYBf1v5_m8Tf6s90y2pPy1KwNby__GKmX1OVRGGAmgSQI
+        type: str
+        enabled: true
+    _type: environment
+  - _id: jar_2cda980dfcbec9ae674cf0962ac4852e1deae414
+    parentId: wrk_9e5198d641534b65aaf9ef7e7fd73ab1
+    modified: 1732797858927
+    created: 1732797858927
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
