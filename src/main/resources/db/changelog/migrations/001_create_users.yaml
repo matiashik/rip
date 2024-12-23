@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: "create users"
+      author: "Big Chungus"
+      changes:
+        - createTable:
+            tableName: "User"
+            columns:
+              - column:
+                  name: id
+                  type: INTEGER
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    notNull: true
+              - column:
+                  name: login
+                  type: TEXT
+                  constraints:
+                    notNull: true
+                    unique: true
+              - column:
+                  name: password
+                  type: TEXT
+                  constraints:
+                    notNull: true
