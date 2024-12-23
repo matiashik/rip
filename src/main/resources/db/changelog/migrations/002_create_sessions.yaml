@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: "create sessions"
+      author: "Big Chungus"
+      changes:
+        - createTable:
+            tableName: "Session"
+            columns:
+              - column:
+                  name: id
+                  type: INTEGER
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    notNull: true
+              - column:
+                  name: token
+                  type: TEXT
+                  constraints:
+                    notNull: true
+                    unique: true
+              - column:
+                  name: user_id
+                  type: INTEGER
+                  constraints:
+                    notNull: true
+                    foreignKeyName: fk_user_session
+                    references: User(id)
+                    onDelete: CASCADE
